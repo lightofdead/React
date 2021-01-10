@@ -5,11 +5,9 @@ import {NavLink} from "react-router-dom";
 import Message from "./Message/Message";
 
 
-
-
 const Dialogs = (props) => {
-    let dialogsElements = props.dialogs.map(dialog => <Dialog name={dialog.name} id={dialog.id}/>)
-    let messagesElements = props.messages.map(m => <Message text={m.message}/>)
+    let dialogsElements = props.state.dialogs.map(dialog => <Dialog name={dialog.name} id={dialog.id}/>)
+    let messagesElements = props.state.messages.map(m => <Message text={m.message}/>)
 
     return (
         <div>

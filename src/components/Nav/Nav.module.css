@@ -11,4 +11,7 @@
 .item a.active{
     color: lightseagreen;
 }
-    
+
+.MainFriends{
+    padding: 50px;
+}

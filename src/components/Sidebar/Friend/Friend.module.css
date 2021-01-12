@@ -1,0 +1,20 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.grid .cell1, .cell2, .cell3{
+    padding: 20px;
+    grid-row-start: 1;
+    grid-row-end: 2
+}
+
+.grid img
+{
+    width: 40px;
+}
+
+

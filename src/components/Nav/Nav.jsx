@@ -1,7 +1,9 @@
 import classes from './Nav.module.css'
 import {NavLink} from "react-router-dom";
+import Sidebar from "../Sidebar/Sidebar";
 
-function Nav() {
+const Nav =(props) => {
+
     return <nav className={classes.nav}>
         <div className={classes.item}>
             <NavLink to="/profile" activeClassName={classes.active} > Profile </NavLink>
@@ -14,6 +16,9 @@ function Nav() {
         </div>
         <div className={classes.item} activeClassName={classes.active}>
             <NavLink to="/music"> Music </NavLink>
+        </div>
+        <div className={classes.MainFriends}>
+            <Sidebar state = {props.state}/>
         </div>
     </nav>
 

@@ -20,7 +20,24 @@ let state = {
             {id: 1, message: "Mdaaa"},]
     },
 
+    sideBar:
+        {
+            sideBar: {
+                friends: [
+                    {id: 1, name:"Vasya", url: "https://sun9-12.userapi.com/c850608/v850608803/1b7811/-grqeTQHWcQ.jpg"},
+                    {id: 2, name:"Petya",  url: "https://sun9-12.userapi.com/c850608/v850608803/1b7811/-grqeTQHWcQ.jpg"},
+                    {id: 3, name:"Anton",  url: "https://sun9-12.userapi.com/c850608/v850608803/1b7811/-grqeTQHWcQ.jpg"},]
+            }
+        }
+
+};
+
+export let addPost = (postMessage) =>
+{
+    let newPost =  {id: 5 , message: postMessage, likeCounts: "(0)" }
+    state.ProfilePage.posts.push(newPost);
 
 }
+
 
 export default state;
